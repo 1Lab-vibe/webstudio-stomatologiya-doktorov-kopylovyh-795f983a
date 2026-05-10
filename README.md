@@ -1,2 +1,3 @@
-# webstudio-stomatologiya-doktorov-kopylovyh-795f983a
-Web Studio landing for Стоматология докторов Копыловых
+# Welcome to your Lovable project
+
+TODO: Document your project here
