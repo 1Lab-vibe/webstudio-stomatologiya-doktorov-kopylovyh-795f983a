@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 98%;
+    --foreground: 200 30% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 30% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 30% 12%;
+
+    --primary: 196 70% 32%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 188 65% 48%;
+
+    --secondary: 196 30% 94%;
+    --secondary-foreground: 200 30% 18%;
+
+    --muted: 200 20% 95%;
+    --muted-foreground: 200 12% 42%;
+
+    --accent: 36 70% 55%;
+    --accent-foreground: 200 30% 12%;
+
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 20% 88%;
+    --input: 200 20% 88%;
+    --ring: 196 70% 32%;
+
+    --radius: 0.75rem;
+
+    --shadow-soft: 0 8px 30px -12px hsl(196 70% 32% / 0.18);
+    --shadow-card: 0 1px 3px hsl(200 30% 12% / 0.04), 0 4px 20px -8px hsl(200 30% 12% / 0.08);
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Manrope', 'Inter', system-ui, sans-serif;
+    @apply tracking-tight;
+  }
+}
+
+@layer utilities {
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .container-tight { @apply max-w-6xl mx-auto px-4 sm:px-6; }
+}
